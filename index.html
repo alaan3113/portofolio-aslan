@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        /* --- Warna dasar --- */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6f7; /* warna latar belakang lembut */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ---Bagian header / menu --- */
+        .navbar {
+            background-color: #7da8a1; /* warna lembut hijau kebiruan */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a:active,a:visited,a:hover {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: none;
+        }
+        a {
+        text-decoration: none;
+        }
+
+        /* --- Bagian profil --- */
+        .profil {
+            background-color: #e1ebea; /* warna lembut abu hijau */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .profil img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .profil h2 {
+            margin: 0;
+        }
+
+        .profil p {
+            margin: 5px 0;
+        }
+
+        .profil button {
+            background-color: #7da8a1;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .profil button:hover {
+            background-color: #678c87;
+        }
+
+        /* --- Bagian pengalaman --- */
+        .pengalaman {
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .pengalaman h3 {
+            border-bottom: 2px solid #7da8a1;
+            padding-bottom: 5px;
+        }
+
+        .pengalaman p {
+            text-align: justify;
+        }
+
+        /* --- Bagian project --- */
+        .project {
+            background-color: #e1ebea;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project h3 {
+            margin-bottom: 15px;
+        }
+
+        .kotak-project {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .kotak {
+            background-color: white;
+            width: 120px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .kotak button {
+            background-color: #7da8a1;
+            color: white;
+            border: none;
+            padding: 5px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .kotak button:hover {
+            background-color: #678c87;
+        }
+
+        /* --- Bagian footer --- */
+        .footer {
+            background-color: #7da8a1;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Aslan</a>
+        <a href="index.html"target="_self">Home</a>
+        <a href="tentang.html"target="_self">Tentang Saya</a>
+        <a href="portofolio.html"target="_self">Portofolio</a>
+    </div>
+
+    <!-- Profil -->
+    <div class="profil">
+        <img src="aslan.jpg" alt="">
+        <div>
+            <h2>Aslan</h2>
+            <p>Saya adalah seorang programmer web yang berdedikasi dan berpengalaman dalam membangun aplikasi web responsif dan modern.</p>
+            <button>Hubungi Saya</button>
+        </div>
+    </div>
+
+    <!-- Pengalaman -->
+    <div class="pengalaman">
+        <h3>Pengalaman Saya</h3>
+        <p><strong>1. Web Developer - PT Teknologi Inovatif (2020 - 2022)</strong><br>
+        Bertanggung jawab merancang, mengembangkan, dan memelihara situs web menggunakan HTML, CSS, dan JavaScript.</p>
+
+        <p><strong>2. Senior Web Developer - CV Kreatif Digital (2022 - Sekarang)</strong><br>
+        Memimpin tim pengembang web menggunakan teknologi modern seperti React dan Node.js.</p>
+    </div>
+
+    <!-- Project -->
+    <div class="project">
+        <h3>Project Saya</h3>
+        <div class="kotak-project">
+            <div class="kotak">
+                <p>Project 1</p>
+                <button>Lihat Detail</button>
+            </div>
+            <div class="kotak">
+                <p>Project 2</p>
+                <button>Lihat Detail</button>
+            </div>
+            <div class="kotak">
+                <p>Project 3</p>
+                <button>Lihat Detail</button>
+            </div>
+            <div class="kotak">
+                <p>Project 4</p>
+                <button>Lihat Detail</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright ©2025 Aslan</p>
+    </div>
+
+</body>
+</html>
